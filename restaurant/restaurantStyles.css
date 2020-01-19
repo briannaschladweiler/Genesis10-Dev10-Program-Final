@@ -1,0 +1,91 @@
+/*
+Creator: Brianna Schladweiler
+Date created: January 9, 2020
+Date last modified: January 19, 2020
+*/
+
+header h1 {
+    font-family: 'Oleo Script', arial;
+    color: #365612;
+}
+
+.jumbotron {
+    margin: 0;
+    background-color: #e2e2e2;
+    padding: 2rem;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+header, footer {
+    background-color: #e2e2e2;
+}
+
+footer {
+    border-top: 2px #365612 solid;
+    padding: 15px 0px 30px 0px;
+    color: #365612;
+}
+
+nav {
+    border-top: 2px #365612 solid;
+    border-bottom: 2px #365612 solid;
+    padding: 15px 0px;
+    text-align: left;
+}
+
+nav p {
+    margin: 0px;
+}
+
+
+.badge-tab {
+    width: 110px;
+
+}
+
+nav a {
+    background-color: #365612;
+    color: white;
+    padding: 8px;
+    border: thin solid black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 0px 5px;
+}
+
+nav a:visited {
+    color: pink; 
+}
+
+
+
+nav a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+
+
+nav a:active {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#carouselExampleControls {
+    width: 40%;
+    min-width: 400px;
+    margin: 0px auto;
+}
+
+#enable-js {
+    padding: 15px;
+    background-color: rgb(250, 183, 13);
+    color: black;
+    text-align: center;
+}
