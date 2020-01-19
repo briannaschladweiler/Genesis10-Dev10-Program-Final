@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+    Creator: Brianna Schladweiler
+    Date created: January 12, 2020
+    Date last modified: January 15, 2020
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Lucky Sevens</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style>
+            .container {
+                text-align: center;
+                margin-top: 20px;
+            }
+            #startBet {
+                margin: 10px;
+                border: 2px solid rgb(58, 58, 58);
+            }            
+            #submitButton {
+                margin: 10px;
+                border: 2px solid rgb(58, 58, 58);
+            }
+            hr {
+               border-top: 2px solid rgb(58, 58, 58); 
+            }
+            table{
+                border: 4px solid rgb(58, 58, 58);
+                text-align: left;
+            }
+            tr {
+                border: 2px solid gray;
+            }
+            td{
+                border: 2px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Lucky Sevens</h1>
+            <form name="luckySevens" onsubmit="return playLuckySevens();" 
+                onreset="resetForm();" class="form-inline justify-content-center">
+                <div class="form-group justify-content-center">
+                    <label for="startBet">Starting Bet: </label>
+                    <input type="number" class="form-control" id="startBet" placeholder="$0.00">
+                </div>
+                <div class="w-100"></div>    
+                <button type="submit" id="submitButton" class="btn btn-default">Play</button>
+            </form>
+            <div id="results" style="display:none";>
+                <hr />
+                <h1>Results</h1>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Starting Bet</td>
+                            <td><span id="originalBet"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Total Rolls Before Going Broke</td>
+                            <td><span id="totalRolls"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Highest Amount Won</td>
+                            <td><span id="highestBet"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Roll Count at Highest Amount Won</td>
+                            <td><span id="rollOfHighestBet"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <script type="text/JavaScript" src="luckySevens.js"></script>
+        </div>
+    </body>
+</html> 
